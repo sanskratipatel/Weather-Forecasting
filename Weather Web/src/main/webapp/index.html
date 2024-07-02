@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #000, #333);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+        }
+        .container:hover h1 {
+            color: #ffeb3b;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            padding: 10px;
+            font-size: 1em;
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .form-control:focus {
+            border-color: #2980b9;
+            box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+        }
+        .btn {
+            background: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .btn:hover {
+            background: #1a5480;
+            transform: translateY(-3px);
+        }
+        .cloud-image {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover .cloud-image {
+            transform: rotate(15deg);
+        }
+        .link-container {
+            margin-top: 20px;
+        }
+        .link-container a {
+            color: #2980b9;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .link-container a:hover {
+            color: #1a5480;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="cloud-image" src="images/logo.jpg" alt="Cloud">
+        <h1>Welcome To My Website</h1>
+        <form action="city" method="post">
+            <div class="form-group">
+                <label for="city">Enter City:</label>
+                <input type="text" id="city" name="city" class="form-control" placeholder="Enter City Name" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Weather</button>
+        </form>
+        <div class="link-container">
+            <a href="https://www.example.com">More Weather Info</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
