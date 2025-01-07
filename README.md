@@ -33,7 +33,7 @@ This project is a weather forecasting website that allows users to get real-time
   - JSP (Java Server Pages)
 - **Backend**:
   - Java Servlets
-  - API Integration (for weather data)
+  - API Integration (for weather data) (Open Weather)
 - **Tools**:
   - Eclipse IDE
   - Apache Tomcat (server)
