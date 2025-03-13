@@ -14,7 +14,7 @@ A weather forecasting website built using HTML, CSS, JSP, Servlets and Eclipse l
 - [License](#license)
 
 ## Overview
-
+sddd
 This project is a weather forecasting website that allows users to get real-time weather information for any location. It utilizes an external weather API to fetch the data and displays it in a user-friendly format. The project is developed using Java Server Pages (JSP) and Servlets in Eclipse.
 
 ## Features
