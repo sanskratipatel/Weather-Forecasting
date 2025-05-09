@@ -1,7 +1,7 @@
 # Weather Forecasting Website
 
 
-A weather forecasting website built using HTML, CSS, JSP, Servlets and Eclipse leveraging an external weather API to provide real-time weather information.
+A weather forecasting website built using HTML5, CSS3, JSP, Servlets and Eclipse leveraging an external weather API to provide real-time weather information.
 
 ## Table of Contents
 
